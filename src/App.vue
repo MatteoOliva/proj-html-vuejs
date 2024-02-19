@@ -3,14 +3,10 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-import {store} from './store'
+
 
 export default {
-  data() {
-    return {
-      store: store,
-    };
-  },
+  
 
   components: { AppHeader, AppMain, AppFooter, },
 
@@ -19,7 +15,13 @@ export default {
 </script>
 
 <template>
+
+  <AppHeader></AppHeader>
+  <AppMain></AppMain>
+  <AppFooter></AppFooter>
+
 </template>
 
-<style>
+<style lang="scss">
+@use './styles/general.scss';
 </style>

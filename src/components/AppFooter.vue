@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-<main></main>
+  <footer>footer</footer>
 </template>
 
 <style lang="scss" scoped>
