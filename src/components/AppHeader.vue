@@ -34,6 +34,27 @@ export default {
       </div>
 
     </div>
+    <div class="header-bottom">
+      <div class="header-bot-left">
+
+        <div class="futureofesports">
+        <div><h4>Game with Live Streaming</h4></div>  
+        <div><h2>Future of Esports</h2></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eligendi dolores vero adipisci quae dolorem natus</p></div>
+        <div class="headerbottom-btnsleft">
+          <div class="headerbottom-btnleft"> <span id="headerbottom-btnleft">EXPLORE GAMES <img src="../../images/svg/e-double-right-arrow.svg" alt=""></span>
+          </div>
+        <div class="play-icon"><div id="play-icon"><img src="../../images/icon/play-icon.png"></div>
+        </div>
+      </div>
+        
+      </div>
+
+      <div class="img-left"><img  src="" alt=""></div>
+
+    </div>
+      <div class="header-bot-right"><div class="img-right"></div></div>
+    </div>
   </header>
 </template>
 
@@ -43,9 +64,7 @@ export default {
 
 header {
   background-image: url(../../images/index-banner-bg.png);
-  
-  
-  
+  background-repeat: no-repeat;     
   .nav ul li {
     display: inline-block;
     color: $text-color;
@@ -72,6 +91,7 @@ header {
   .header-action {
     @include center;
     .chart {
+      position: relative;
       &:hover {
       cursor: pointer;
       
@@ -83,6 +103,10 @@ header {
     height: 20px;
     color: black;
     background-color: $button-color;
+    padding: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
   }
 }
   .header-btn {
@@ -105,23 +129,17 @@ header {
       
     }
     }
-  }
-.dropdown {
+    .dropdown {
   background:transparent;
   border: none;
-  
-  
-  
+  }
   &:hover .dropdown-content {
     display: block;
     display: flex;
    flex-direction: column;  
    left: 37%;
   }
-
-  
-}
-.dropdown-content {
+  .dropdown-content {
    position: absolute;
    padding: 10px;
    background-color: $secondary-color;
@@ -134,6 +152,99 @@ header {
     }
    }
   
+  
+  
+
+  
 }
+.header-bottom {
+  display: flex;
+  max-width: 100%;
+  
+}
+.header-bot-left {
+  width: 50%;
+  
+  @include center;
+  
+}
+.header-bot-right {
+  width: 50%;
+ 
+  img {
+    max-width: 100%;
+  }
+}
+
+.futureofesports {
+  @include center;
+  flex-direction: column;
+  max-width: 40%;
+  margin-top: 100px;
+  margin-left: 200px;
+  
+
+  h4 {
+    font-size: 25px;
+    color: $primary-color;
+    margin-right: 90px;
+    
+  }
+  h2 {
+    font-size: 55px;
+    color: $text-color;
+    margin-top: 20px;
+  }
+  p {
+    color: $underText-color;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+.headerbottom-btnsleft {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin-top: 25px;
+}
+
+.headerbottom-btnleft { 
+    width: 220px;
+    height: 50px;
+    border: 1px solid $button-color;
+    border-radius: 20px;
+    @include center;
+    margin-left: 45px;
+   
+}
+#headerbottom-btnleft {
+      border-radius: 20px;
+      color: $secondary-color;
+      background-color: $button-color;
+      padding: 12.7px 28px;
+      &:hover {
+      cursor: pointer;
+      background-color: $primary-color;
+    }
+    }
+    .play-icon {
+      margin-left: 20px;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      border: 1px solid $primary-color;
+      @include center;
+    }
+    #play-icon {
+      height: 40px;
+      width: 40px;
+      background-color: $text-color;
+      border-radius: 50%;
+      @include center;
+    }
+    }
+
+
+
 
 </style>
