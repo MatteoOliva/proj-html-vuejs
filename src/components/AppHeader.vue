@@ -42,7 +42,6 @@ export default {
 @use '../styles/partials/mixins.scss' as *;
 
 header {
-  max-width: 100%;
   background-image: url(../../images/index-banner-bg.png);
   
   
