@@ -130,6 +130,9 @@ header {
    a {
     color: $text-color;
     text-decoration: none;
+    &:hover {
+      color: $primary-color;
+    }
    }
   
 }
