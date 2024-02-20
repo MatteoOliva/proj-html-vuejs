@@ -50,10 +50,14 @@ export default {
         
       </div>
 
-      <div class="img-left"><img  src="" alt=""></div>
+      <div class="img-left"><img  src="../../images/game-controler.png" alt=""></div>
 
     </div>
-      <div class="header-bot-right"><div class="img-right"></div></div>
+      <div class="header-bot-right">
+        <div class="img-right">
+          <img src="../../images/index-banner-illus.png" alt="">
+      </div>
+    </div>
     </div>
   </header>
 </template>
@@ -64,7 +68,7 @@ export default {
 
 header {
   background-image: url(../../images/index-banner-bg.png);
-  background-repeat: no-repeat;     
+  background-repeat: no-repeat;
   .nav ul li {
     display: inline-block;
     color: $text-color;
@@ -160,17 +164,19 @@ header {
 .header-bottom {
   display: flex;
   max-width: 100%;
+  margin-top: -40px;
   
 }
 .header-bot-left {
   width: 50%;
-  
+  position: relative;
   @include center;
+  margin-top: -220px;
   
 }
+
 .header-bot-right {
   width: 50%;
- 
   img {
     max-width: 100%;
   }
@@ -179,26 +185,26 @@ header {
 .futureofesports {
   @include center;
   flex-direction: column;
-  max-width: 40%;
+  max-width: 50%;
   margin-top: 100px;
   margin-left: 200px;
   
 
   h4 {
-    font-size: 25px;
+    font-size: 30px;
     color: $primary-color;
     margin-right: 90px;
     
   }
   h2 {
-    font-size: 55px;
+    font-size: 75px;
     color: $text-color;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   p {
     color: $underText-color;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .headerbottom-btnsleft {
@@ -242,9 +248,11 @@ header {
       border-radius: 50%;
       @include center;
     }
+    .img-left {
+      position: absolute;
+      left: 7%;
+      top: 60%;
+      
     }
-
-
-
-
+    }
 </style>
