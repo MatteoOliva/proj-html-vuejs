@@ -13,7 +13,13 @@ export default {
       <div class="nav">
         <ul>
           <li>Home</li>
-          <li>Games <span><img src="../../images/svg/c-down-arrow.svg" alt=""></span></li>
+          <li class="dropdown">Games<img src="../../images/svg/c-down-arrow.svg" alt="">
+          <div class="dropdown-content">
+            <a href="#">Games</a>
+            <a href="#">Games Details</a>
+            <a href="#">Match Details</a>
+          </div>
+        </li>
           <li>Shop <span><img src="../../images/svg/c-down-arrow.svg" alt=""></span></li>
           <li>Pages <span><img src="../../images/svg/c-down-arrow.svg" alt=""></span></li>
           <li>Blog <span><img src="../../images/svg/c-down-arrow.svg" alt=""></span></li>
@@ -45,6 +51,15 @@ header {
     display: inline-block;
     color: $text-color;
     margin-right: 15px;
+    &:hover {
+      cursor: pointer;
+      color: $primary-color;
+    }
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
   }
 
   ul li:first-child{
@@ -57,6 +72,12 @@ header {
   }
   .header-action {
     @include center;
+    .chart {
+      &:hover {
+      cursor: pointer;
+      
+    }
+    }
     .chart-count {
     border-radius: 50%;
     width: 20px;
@@ -64,6 +85,7 @@ header {
     color: black;
     background-color: $button-color;
   }
+}
   .header-btn {
     margin-left: 40px;
     width: 200px;
@@ -78,10 +100,37 @@ header {
       color: $secondary-color;
       background-color: $button-color;
       padding: 12.7px 28px;
+      &:hover {
+      cursor: pointer;
+      background-color: $primary-color;
+      
     }
+    }
+  }
+.dropdown {
+  background:transparent;
+  border: none;
+  
+  
+  
+  &:hover .dropdown-content {
+    display: block;
+    display: flex;
+   flex-direction: column;  
+   left: 37%;
   }
 
   
+}
+.dropdown-content {
+   position: absolute;
+   padding: 10px;
+   background-color: $secondary-color;
+   display: none;
+   a {
+    color: $text-color;
+    text-decoration: none;
+   }
   
 }
 
