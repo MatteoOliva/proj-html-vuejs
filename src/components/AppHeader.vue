@@ -112,6 +112,7 @@ header {
 
   .nav ul li {
     display: inline-block;
+    text-decoration: none;
     color: $text-color;
     margin-right: 15px;
     &:hover {
