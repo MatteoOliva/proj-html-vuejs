@@ -211,6 +211,10 @@ export default {
             </div>
           </div>
           <div class="video-name">Leage of Legends</div>
+          <div class="streaming-numbers">
+            <p><span>356.599</span>viewers</p>
+            <p><span>23.599</span>likes</p>
+          </div>
         </div>
       </section>
     </div>
@@ -512,6 +516,17 @@ export default {
         left: 43%;
         color: $text-color;
         font-size: 40px;
+      }
+      .streaming-numbers {
+        position: absolute;
+        left: 25%;
+        top: 86%;
+        display: flex;
+        gap: 35px;
+        span {
+          color: $primary-color;
+          margin-right: 5px;
+        }
       }
     }
   }
