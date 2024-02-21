@@ -46,7 +46,7 @@ export default {
           <span class="chart-count">03</span>
         </div>
         <div class="header-btn">
-          <span id="header-btn">LIVE STREAMING</span>
+          <a href="#livestreaming"><button id="header-btn">LIVE STREAMING</button></a>
         </div>
       </div>
     </div>
@@ -165,6 +165,7 @@ header {
     border: 1px solid $button-color;
     border-radius: 20px;
     @include center;
+    z-index: 1;
   }
   #header-btn {
     width: 190px;
@@ -174,7 +175,6 @@ header {
     background-color: $button-color;
     text-align: center;
     line-height: 40px;
-    z-index: 1;
     &:hover {
       cursor: pointer;
       background-color: $primary-color;

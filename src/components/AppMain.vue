@@ -74,7 +74,7 @@ export default {
         </div>
       </section>
       <!-- keep eyes and manage upcoming battle -->
-      <section>
+      <section id="view-all-match">
         <div class="s2-top">
           <h4>Trending Battle</h4>
           <h2>Keep Eyes & Manage upcoming Battle</h2>
@@ -150,10 +150,11 @@ export default {
 
         <div class="s2-button">
           <div class="s2-btn">
-            <div id="s2-btn">
+            <a href="#view-all-match"><button id="s2-btn">
               VIEW ALL MATCH
               <img src="../../images/svg/e-double-right-arrow.svg" alt="" />
-            </div>
+            </button>
+          </a>
           </div>
         </div>
       </section>
@@ -181,7 +182,7 @@ export default {
         </div>
       </section>
       <!-- watch the stream  -->
-      <section>
+      <section id="livestreaming">
         <div class="s4-text">
           <h4>Live Streaming</h4>
           <h2>Watch The Streams</h2>
@@ -508,7 +509,7 @@ export default {
       .video-name {
         position: absolute;
         top: 57%;
-        left: 45%;
+        left: 43%;
         color: $text-color;
         font-size: 40px;
       }
