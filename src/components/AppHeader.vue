@@ -9,7 +9,7 @@ export default {
 <template>
   <header>
     <div class="header-top">
-      <img class="background" src="../../images/index-banner-bg.png" alt="">
+      <img class="background-header" src="../../images/index-banner-bg.png" alt="">
       <div class="header-logo"><img src="../../images/logo.png" alt="" /></div>
       <div class="nav">
         <ul>
@@ -50,6 +50,7 @@ export default {
         </div>
       </div>
     </div>
+    <!-- future of Esports -->
     <div class="header-bottom">
       <div class="header-bot-left">
         <div class="futureofesports">
@@ -102,7 +103,7 @@ header {
   width: 100%;
   
   position: relative;
-  .background {
+  .background-header {
     position:absolute;
     z-index: -1;
     width: 100%;
@@ -227,19 +228,19 @@ header {
     margin-left: 200px;
 
     h4 {
-      font-size: 30px;
+      
       color: $primary-color;
       margin-right: 90px;
     }
     h2 {
-      font-size: 75px;
+      
       color: $text-color;
       margin-top: 10px;
     }
     p {
       color: $underText-color;
       margin-top: 10px;
-      font-size: 20px;
+  
     }
   }
   .headerbottom-btnsleft {
@@ -285,6 +286,9 @@ header {
     background-color: $text-color;
     border-radius: 50%;
     @include center;
+    &:hover{
+      cursor: pointer;
+    }
   }
   .img-left {
     position: absolute;
