@@ -72,7 +72,6 @@ export default {
           </div>
         </div>
       </section>
-
       <section>
 
         <div class="s2-top">
@@ -156,7 +155,33 @@ export default {
               </div>
             </div>
           </div>
-    
+
+      </section>
+      <section>
+
+      <h2>Futio Quick Facts</h2>
+
+      <div class="s3-boxes">
+
+      <div class="s3-box">
+        <span>1135</span>
+        <h4>Twitch Streams</h4>
+      </div>
+      <div class="s3-box">
+        <span>44</span>
+        <h4>Total Games</h4>
+      </div>
+      <div class="s3-box">
+        <span>982</span>
+        <h4>YouTube Streams</h4>
+      </div>
+      <div class="s3-box">
+        <span>40</span>
+        <h4>Pro Team</h4>
+      </div>
+
+    </div>
+
       </section>
     </div>
   </main>
@@ -366,6 +391,45 @@ export default {
     }
   }
   section:nth-child(3) {
+    background-color: $secondary-color;
+    height: 380px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    h2 {
+      color: $text-color;
+      padding-top: 70px;
+      font-size: 45px;
+    }
+    .s3-boxes {
+      width: 66%;
+      @include center;
+      align-self: center;
+      margin-top: 50px;
+      gap: 20px;
+      .s3-box {
+      width: calc((66% / 4) - 20px);
+      height: 125px;
+      border: 0.5px solid rgb(202, 200, 200, .2);
+      border-radius: 20px;
+      @include center;
+      flex-direction: column;
+      
+      span {
+        color: $text-color;
+        font-size: 35px;
+      }
+      h4 {
+        color: $primary-color;
+        font-size: 11px;
+        opacity: 0.5;
+        margin-top: 5px;
+        
+      }
+
+    }
+    }
     
   }
 }
