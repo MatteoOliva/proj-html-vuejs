@@ -74,6 +74,7 @@ export default {
       </section>
 
       <section>
+
         <div class="s2-top">
           <h4>Trending Battle</h4>
           <h2>Keep Eyes & Manage upcoming Battle</h2>
@@ -85,33 +86,77 @@ export default {
         </div>
 
         <div class="s2-bot">
-          <div class="s2-bot-left">
-            <div class="s2-bot-left-card">
-              <div class="s2-card-top">
-                <div class="game1"><img src="../../images/game-img-1.png" alt="" /></div>
-                <div class="vs"><img src="../../images/verus-icon.png" alt="" /></div>
-                <div class="game2"><img src="../../images/game-img-2.png" alt="" /></div>
-              </div>
-              <div class="s2-card-mid"></div>
-              <div class="s2-card-bot"></div>
+          <div class="s2-bot-card">
+            <div class="s2-bot-card-top">
+              <img src="../../images/game-img-1.png" alt="">
+              <img src="../../images/verus-icon.png" alt="">
+              <img src="../../images/game-img-2.png" alt="">
             </div>
-            <div class="s2-bot-left-card"></div>
+            <div class="s2-bot-card-mid">
+              <h4>Call Of Deauty</h4>
+              <h5>December 25, 2022 4:00 PM</h5>
+            </div>
+            <div class="s2-bot-card-bot">
+              <img src="../../images/icon/youtube-icon.png" alt="">Youtube             
+              <img src="../../images/icon/twitch-icon.png" alt="">Twitch         
+            </div>
           </div>
-
-          <div class="s2-bot-right">
-            <div class="s2-bot-right-card"></div>
-            <div class="s2-bot-right-card"></div>
+          <div class="s2-bot-card">
+            <div class="s2-bot-card-top">
+              <img src="../../images/game-img-3.png" alt="">
+              <img src="../../images/verus-icon.png" alt="">
+              <img src="../../images/game-img-4.png" alt="">
+            </div>
+            <div class="s2-bot-card-mid">
+              <h4>Legendary Battles</h4>
+              <h5>December 25, 2022 4:00 PM</h5>
+            </div>
+            <div class="s2-bot-card-bot">
+              <img src="../../images/icon/youtube-icon.png" alt="">Youtube             
+              <img src="../../images/icon/twitch-icon.png" alt="">Twitch         
+            </div>
           </div>
+          <div class="s2-bot-card">
+            <div class="s2-bot-card-top">
+              <img src="../../images/game-img-5.png" alt="">
+              <img src="../../images/verus-icon.png" alt="">
+              <img src="../../images/game-img-6.png" alt="">
+            </div>
+            <div class="s2-bot-card-mid">
+              <h4>Nay Corral Gundown</h4>
+              <h5>December 25, 2022 4:00 PM</h5>
+            </div>
+            <div class="s2-bot-card-bot">
+              <img src="../../images/icon/youtube-icon.png" alt="">Youtube             
+              <img src="../../images/icon/twitch-icon.png" alt="">Twitch         
+            </div>
+          </div>
+          <div class="s2-bot-card">
+            <div class="s2-bot-card-top">
+              <img src="../../images/game-img-7.png" alt="">
+              <img src="../../images/verus-icon.png" alt="">
+              <img src="../../images/game-img-8.png" alt="">
+            </div>
+            <div class="s2-bot-card-mid">
+              <h4>League Of Legends</h4>
+              <h5>December 25, 2022 4:00 PM</h5>
+            </div>
+            <div class="s2-bot-card-bot">
+              <img src="../../images/icon/youtube-icon.png" alt="">Youtube             
+              <img src="../../images/icon/twitch-icon.png" alt="">Twitch         
+            </div>
+          </div>
+        </div>
 
-          <!-- <div class="s2-button">
+        <div class="s2-button">
             <div class="s2-btn">
-              <div id="s2btn">
+              <div id="s2-btn">
                 VIEW ALL MATCH
                 <img src="../../images/svg/e-double-right-arrow.svg" alt="" />
               </div>
             </div>
-          </div> -->
-        </div>
+          </div>
+    
       </section>
     </div>
   </main>
@@ -214,7 +259,7 @@ export default {
     }
   }
   section:nth-child(2) {
-    height: 1730px;
+    height: 1530px;
     width: 100%;
     background-color: $bkground-color;
 
@@ -241,30 +286,88 @@ export default {
         font-size: 18px;
       }
     }
+
     .s2-bot {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       gap: 30px;
-      max-width: 75%;
-      .s2-bot-left {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        .s2-card-top {
+      width: 80%;
+      margin: auto;
+      margin-top: 65px;
+      .s2-bot-card {
+        height: 450px;
+        width: calc((80% / 2) - 5px );
+        background-color: $footer-color;
+        border-radius: 20px;
+        .s2-bot-card-top {
+          height: 46%;
+          width: 100%;
           @include spaceAround;
-          width: calc((80% / 2) - 30px);
-          background-color: $footer-color;
-          height: 100px;
           
         }
-        .s2-bot-right {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
+        .s2-bot-card-mid {
+          height: 27%;
+          width: 100%;
+          background-color: $card-color;
+          text-align: center; 
+          h4 {
+            font-size: 25px;
+            padding-top: 25px;
+            color: $text-color;
+          }
+          h5 {
+            padding-top: 20px;
+            font-size: 15px;
+            color: $primary-color;
+          }
+        }
+        .s2-bot-card-bot {
+          height: 27%;
+          width: 100%;
+          @include center;
+          color: $text-color;
+          img:hover {
+            cursor: pointer;
+          }
+          img:nth-child(2) {
+            margin-left: 25px          
+          }
         }
       }
     }
+    .s2-button {
+      @include center;
+      margin-top: 60px;
+      .s2-btn {
+          width: 200px;
+          height: 50px;
+          border: 1px solid $button-color;
+          border-radius: 20px;
+          @include center;
+        }
+
+        #s2-btn {
+          width: 180px;
+          height: 40px;
+          border-radius: 20px;
+          color: $secondary-color;
+          background-color: $button-color;
+          text-align: center;
+          line-height: 40px;
+          z-index: 1;
+
+          &:hover {
+            cursor: pointer;
+            background-color: $primary-color;
+          }
+        }
+    }
+  }
+  section:nth-child(3) {
+    
   }
 }
+
 </style>
